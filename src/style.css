@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Beausite';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/beausite-font.woff2') format('woff2');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Beausite', sans-serif;
+}
+
+.section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  --scale: 0;
+
+  .section__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    transform: scale(var(--scale));
+
+    .section__media__front, .section__media__back {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .section__media__front {   
+      filter: blur(2px);
+         
+      img {
+        mask-image: url(./mask.png);
+        mask-position: 50% 50%;
+        mask-size: cover;
+      }
+    }
+
+    .front-1 {
+      transform: scale(1);
+    }
+
+    .front-2 {
+      transform: scale(0.85);
+    }
+
+    .front-3 {
+      transform: scale(0.6);
+    }
+
+    .front-4 {
+      transform: scale(0.45);
+    }
+
+    .front-5 {
+      transform: scale(0.3);
+    }
+
+    .front-6 {
+      transform: scale(0.15);
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  h1 {
+    font-size: 3vw;
+    font-weight: normal;
+    transform: translateY(-15%);
+
+    span {
+      display: inline-block;
+    }
+
+    .left {
+      transform: translate3d(calc(var(--scale) * (-66vw + 100%) - 0.5vw), 0, 0);
+    }
+
+    .right {
+      transform: translate3d(calc(var(--scale) * (66vw - 100%)), 0, 0);
+    }
+  }
+}
+
+  .section__images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    perspective: 100vh;
+
+    img {
+      position: absolute;
+      width: 10vw;
+
+      transform: translate3d(0, 0, 0);
+      will-change: transform;
+      backface-visibility: hidden;
+      transform-style: preserve-3d;
+
+      &:nth-of-type(1) {
+        top: 20vw;
+        left: -3vw;
+      }
+
+      &:nth-of-type(2) {
+        top: 10vw;
+        left: 20vw;
+      }
+
+      &:nth-of-type(3) {
+        top: 12.5vw;
+        left: 26.5vw;
+      }
+
+      &:nth-of-type(4) {
+        top: 20.5vw;
+        right: 20vw;
+      }
+
+      &:nth-of-type(5) {
+        top: 5vw;
+        right: 10vw;
+      }
+
+      &:nth-of-type(6) {
+        bottom: 5vw;
+        left: 10vw;
+      }
+
+      &:nth-of-type(7) {
+        bottom: 12vw;
+        left: 22.5vw;
+      }
+
+      &:nth-of-type(8) {
+        bottom: 5vw;
+        left: 45vw;
+      }
+
+      &:nth-of-type(9) {
+        bottom: 5vw;
+        right: 15vw;
+      }
+
+      &:nth-of-type(10) {
+        bottom: 9vw;
+        right: 7vw;
+      }
+    }
+  }

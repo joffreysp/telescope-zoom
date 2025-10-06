@@ -12,6 +12,7 @@
     "vite": "^7.0.4"
   },
   "dependencies": {
-    "gsap": "^3.13.0"
+    "gsap": "^3.13.0",
+    "imagesloaded": "^5.0.0"
   }
 }

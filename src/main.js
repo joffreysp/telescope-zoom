@@ -1,5 +1,7 @@
 import "./style.css"
 
+import { preloadImages } from './utils.js'
+
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { ScrollSmoother } from "gsap/ScrollSmoother"
@@ -77,4 +79,8 @@ smoother = ScrollSmoother.create({
 window.smoother = smoother
 
 const animation = new Animation()
-animation.init()
+
+preloadImages('.wrapper img').then(() => {
+  animation.init()
+  document.body.classList.remove('loading')
+})

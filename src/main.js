@@ -1,11 +1,10 @@
 import "./style.css"
 
-import Lenis from "lenis";
-
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
+import { ScrollSmoother } from "gsap/ScrollSmoother"
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
 
 class Animation {
   constructor() {
@@ -69,24 +68,14 @@ class Animation {
   }
 }
 
-
-const lenis = new Lenis({
-  duration: 1.2,
-  orientation: 'vertical',
-  gestureOrientation: 'vertical',
-  wheelMultiplier: 2,
-  touchMultiplier: 2,
+let smoother
+smoother = ScrollSmoother.create({
+  wrapper: ".wrapper",
+  content: ".content",
+  smooth: 1,
+  effects: true
 })
-
-window.lenis = lenis
-
-function raf(time) {
-  lenis.raf(time)
-  requestAnimationFrame(raf)
-}
-
-requestAnimationFrame(raf)
-
+window.smoother = smoother
 
 const animation = new Animation()
 animation.init()

@@ -20,6 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   --scale: 0;
 
@@ -100,6 +101,18 @@ body {
     .right {
       transform: translate3d(calc(var(--scale) * (66vw - 100%)), 0, 0);
     }
+
+    @media (max-width: 768px) {
+      font-size: 9vw;
+
+      .left {
+        transform: translate3d(calc(var(--scale) * (-100vw + 100%) - 0.5vw), 0, 0);
+      }
+  
+      .right {
+        transform: translate3d(calc(var(--scale) * (100vw - 100%)), 0, 0);
+      }
+    }
   }
 }
 
@@ -120,6 +133,10 @@ body {
       backface-visibility: hidden;
       transform-style: preserve-3d;
 
+      @media (max-width: 768px) {
+        width: 20vw;
+      }
+
       &:nth-of-type(1) {
         top: 20vw;
         left: -3vw;
@@ -133,41 +150,80 @@ body {
       &:nth-of-type(3) {
         top: 12.5vw;
         left: 26.5vw;
+
+        @media (max-width: 768px) {
+          top: 30vw;
+          left: 30vw;
+        }
       }
 
       &:nth-of-type(4) {
         top: 20.5vw;
         right: 20vw;
+
+        @media (max-width: 768px) {
+          right: 15vw;
+          top: 30vw;
+        }
       }
 
       &:nth-of-type(5) {
         top: 5vw;
         right: 10vw;
+
+        @media (max-width: 768px) {
+          top: 10vw;
+          right: 5vw;
+        }
       }
 
       &:nth-of-type(6) {
         bottom: 5vw;
         left: 10vw;
+
+        @media (max-width: 768px) {
+          left: 5vw;
+        }
       }
 
       &:nth-of-type(7) {
         bottom: 12vw;
         left: 22.5vw;
+
+        @media (max-width: 768px) {
+          left: 10vw;
+          bottom: 27.5vw;
+        }
       }
 
       &:nth-of-type(8) {
         bottom: 5vw;
         left: 45vw;
+
+        @media (max-width: 768px) {
+          bottom: 10vw;
+          left: 35vw;
+        }
+          
       }
 
       &:nth-of-type(9) {
         bottom: 5vw;
         right: 15vw;
+
+        @media (max-width: 768px) {
+          bottom: 5vw;
+        } 
       }
 
       &:nth-of-type(10) {
         bottom: 9vw;
         right: 7vw;
+
+        @media (max-width: 768px) {
+          right: 3vw;
+          bottom: 22vw;
+        }
       }
     }
   }

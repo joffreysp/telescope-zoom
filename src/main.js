@@ -72,8 +72,7 @@ let smoother
 smoother = ScrollSmoother.create({
   wrapper: ".wrapper",
   content: ".content",
-  smooth: 1,
-  effects: true
+  smooth: 1.5,
 })
 window.smoother = smoother
 

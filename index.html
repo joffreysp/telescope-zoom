@@ -1,60 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zoom Trailing Animation on Scroll | Codrops</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Codrops" />
+    <link rel="shortcut icon" href="https://tympanus.net/favicon/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="./src/base.css" />
+    <script>
+      document.documentElement.className = 'js';
+    </script>
+    <script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
   </head>
-  <body>
-    <div class="wrapper">
-      <div class="content">
-        <div class="section">
-          <h1>
-            <span class="left">for the</span>
-            <span class="right">planet</span>
-          </h1>
 
-          <div class="section__media">
-            <div class="section__media__back">
-              <img src="./img-big.jpg" alt="Image" />
+  <body class="loading">
+    <main>
+      <header class="frame">
+        <h1 class="frame__title">
+          Smooth,
+          <a href="https://tympanus.net/codrops/demos/?tag=scrolling">#scrolling</a>
+          images zoom with
+          <a href="https://tympanus.net/codrops/demos/?tag=gsap">#GSAP</a>
+        </h1>
+        <a class="frame__back" href="https://tympanus.net/codrops/?p=99444">Tutorial</a>
+        <a class="frame__archive" href="https://tympanus.net/codrops/demos/">All demos</a>
+        <a class="frame__github" href="https://github.com/joffreysp/draggable-grid">GitHub</a>
+      </header>
+
+      <div class="wrapper">
+        <div class="content">
+          <div class="section">
+            <h1>
+              <span class="left">for the</span>
+              <span class="right">planet</span>
+            </h1>
+
+            <div class="section__media">
+              <div class="section__media__back">
+                <img src="./img-big.jpg" alt="Image" />
+              </div>
+
+              <div class="section__media__front front-1">
+                <img src="./img-big.jpg" alt="Image" />
+              </div>
+              <div class="section__media__front front-2">
+                <img src="./img-big.jpg" alt="Image" />
+              </div>
+              <div class="section__media__front front-3">
+                <img src="./img-big.jpg" alt="Image" />
+              </div>
+              <div class="section__media__front front-4">
+                <img src="./img-big.jpg" alt="Image" />
+              </div>
+              <div class="section__media__front front-5">
+                <img src="./img-big.jpg" alt="Image" />
+              </div>
+              <div class="section__media__front front-6">
+                <img src="./img-big.jpg" alt="Image" />
+              </div>
             </div>
 
-            <div class="section__media__front front-1">
-              <img src="./img-big.jpg" alt="Image" />
+            <div class="section__images">
+              <img src="./img-1.webp" alt="Image" />
+              <img src="./img-2.webp" alt="Image" />
+              <img src="./img-3.webp" alt="Image" />
+              <img src="./img-4.webp" alt="Image" />
+              <img src="./img-9.webp" alt="Image" />
+              <img src="./img-6.webp" alt="Image" />
+              <img src="./img-7.webp" alt="Image" />
+              <img src="./img-8.webp" alt="Image" />
+              <img src="./img-9.webp" alt="Image" />
+              <img src="./img-10.webp" alt="Image" />
             </div>
-            <div class="section__media__front front-2">
-              <img src="./img-big.jpg" alt="Image" />
-            </div>
-            <div class="section__media__front front-3">
-              <img src="./img-big.jpg" alt="Image" />
-            </div>
-            <div class="section__media__front front-4">
-              <img src="./img-big.jpg" alt="Image" />
-            </div>
-            <div class="section__media__front front-5">
-              <img src="./img-big.jpg" alt="Image" />
-            </div>
-            <div class="section__media__front front-6">
-              <img src="./img-big.jpg" alt="Image" />
-            </div>
-          </div>
-
-          <div class="section__images">
-            <img src="./img-1.webp" alt="Image" />
-            <img src="./img-2.webp" alt="Image" />
-            <img src="./img-3.webp" alt="Image" />
-            <img src="./img-4.webp" alt="Image" />
-            <img src="./img-9.webp" alt="Image" />
-            <img src="./img-6.webp" alt="Image" />
-            <img src="./img-7.webp" alt="Image" />
-            <img src="./img-8.webp" alt="Image" />
-            <img src="./img-9.webp" alt="Image" />
-            <img src="./img-10.webp" alt="Image" />
           </div>
         </div>
       </div>
-    </div>
+
+    </main>
 
     <script type="module" src="/src/main.js"></script>
   </body>

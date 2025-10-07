@@ -128,11 +128,6 @@ body {
       position: absolute;
       width: 10vw;
 
-      transform: translate3d(0, 0, 0);
-      will-change: transform;
-      backface-visibility: hidden;
-      transform-style: preserve-3d;
-
       @media (max-width: 768px) {
         width: 20vw;
       }
@@ -145,7 +140,7 @@ body {
       &:nth-of-type(2) {
         top: 5vw;
         left: 20vw;
-      }
+      } 
 
       &:nth-of-type(3) {
         top: 8vw;

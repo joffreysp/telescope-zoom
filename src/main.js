@@ -70,13 +70,13 @@ class Animation {
   }
 }
 
-let smoother
-smoother = ScrollSmoother.create({
+const scroller = ScrollSmoother.create({
   wrapper: ".wrapper",
   content: ".content",
   smooth: 1.5,
+  effects: true,
+  normalizeScroll: true
 })
-window.smoother = smoother
 
 const animation = new Animation()
 

@@ -22,7 +22,7 @@ body {
   justify-content: center;
   overflow: hidden;
 
-  --scale: 0;
+  --progress: 0;
 
   .section__media {
     position: absolute;
@@ -32,7 +32,7 @@ body {
     height: 100%;
     z-index: -1;
 
-    transform: scale(var(--scale));
+    transform: scale(var(--progress));
 
     .section__media__front, .section__media__back {
       position: absolute;
@@ -95,22 +95,22 @@ body {
     }
 
     .left {
-      transform: translate3d(calc(var(--scale) * (-66vw + 100%) - 0.5vw), 0, 0);
+      transform: translate3d(calc(var(--progress) * (-66vw + 100%) - 0.5vw), 0, 0);
     }
 
     .right {
-      transform: translate3d(calc(var(--scale) * (66vw - 100%)), 0, 0);
+      transform: translate3d(calc(var(--progress) * (66vw - 100%)), 0, 0);
     }
 
     @media (max-width: 768px) {
       font-size: 9vw;
 
       .left {
-        transform: translate3d(calc(var(--scale) * (-100vw + 100%) - 0.5vw), 0, 0);
+        transform: translate3d(calc(var(--progress) * (-100vw + 100%) - 0.5vw), 0, 0);
       }
   
       .right {
-        transform: translate3d(calc(var(--scale) * (100vw - 100%)), 0, 0);
+        transform: translate3d(calc(var(--progress) * (100vw - 100%)), 0, 0);
       }
     }
   }

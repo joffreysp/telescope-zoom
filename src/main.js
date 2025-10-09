@@ -25,7 +25,7 @@ class Animation {
         pin: true,
         onUpdate: (self) => {
           const easedProgress = gsap.parseEase("power1.inOut")(self.progress)
-          this.dom.style.setProperty("--scale", easedProgress)
+          this.dom.style.setProperty("--progress", easedProgress)
         }
       }
     })
@@ -66,7 +66,7 @@ class Animation {
         amount: 0.2,
         from: "end"
       }
-    }, 0.4)
+    }, 0.6)
   }
 }
 

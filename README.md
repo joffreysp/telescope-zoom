@@ -2,7 +2,7 @@
 
 Building a Smooth, Trailing Image Zoom Animation with GSAP: Recreating an Effect from Telescope’s Website
 
-![Image Title](https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2025/08/thumbnail.png?x45163")
+![Image Title](https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2025/10/thumb-3.png?x56200")
 
 [Article on Codrops](https://tympanus.net/codrops/2025/09/01/recreating-palmers-draggable-product-grid-with-gsap/)
 
@@ -10,7 +10,13 @@ Building a Smooth, Trailing Image Zoom Animation with GSAP: Recreating an Effect
 
 ## Installation
 
-Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/set_up_a_local_testing_server).
+Install and run this demo using vite
+
+```bash
+npm install
+
+npm run dev
+```
 
 ## Credits
 

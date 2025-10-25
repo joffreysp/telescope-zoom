@@ -1,6 +1,6 @@
-# Zoom Trailing Animation on Scroll
+# Telescope Zoom Animation on Scroll with GSAP
 
-Building a Smooth, Trailing Image Zoom Animation with GSAP: Recreating an Effect from Telescope’s Website
+Learn how to recreate Telescope’s smooth, layered zoom scroll animation using GSAP’s ScrollSmoother and ScrollTrigger plugins to achieve a cinematic, depth-filled scrolling experience.
 
 ![Image Title](https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2025/10/thumb-3.png?x56200")
 

@@ -1,8 +1,3 @@
-@font-face {
-  font-family: 'TWK Lausanne';
-  src: url('../public/TWK-Lausanne.woff2') format('woff2');
-}
-
 *,
 *::after,
 *::before {
@@ -24,7 +19,7 @@ body {
   margin: 0;
   color: var(--color-text);
   background-color: var(--color-bg);
-  font-family: ui-monospace, monospace;
+  font-family: 'area-normal', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,7 +28,6 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: 'TWK Lausanne', sans-serif;
 }
 
 body {
@@ -94,6 +88,7 @@ body {
 a {
   text-decoration: none;
   color: var(--color-link);
+  font-weight: 600;
   outline: none;
   cursor: pointer;
 

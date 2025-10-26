@@ -25,9 +25,9 @@ npm run dev
 
 ## Misc
 
-Follow _Author_: [Twitter](https://x.com/jeycode_), [Instagram](https://www.instagram.com/jeycode__/), [TikTok](https://www.tiktok.com/@jeycode_), [GitHub](https://github.com/joffreysp) ...
+Follow Joffrey: [X](https://x.com/jeycode_), [Instagram](https://www.instagram.com/jeycode__/), [TikTok](https://www.tiktok.com/@jeycode_), [GitHub](https://github.com/joffreysp)
 
-Follow Codrops: [Bluesky](https://bsky.app/profile/codrops.bsky.social), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/), [X](http://www.x.com/codrops)
+Follow Codrops: [X](http://www.x.com/codrops), [Facebook](http://www.facebook.com/codrops), [GitHub](https://github.com/codrops), [Instagram](https://www.instagram.com/codropsss/)
 
 ## License
 

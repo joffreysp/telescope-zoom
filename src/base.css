@@ -127,15 +127,15 @@ a {
   left: 0;
   width: 100%;
   grid-template-columns: auto auto auto 1fr;
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto auto;
   grid-template-areas:
-    'title title title title'
-    'back github archive ...'
-    'sponsor sponsor sponsor sponsor';
+    'title title title sponsor'
+    'back github archive sponsor';
 
   #cdawrap {
-    max-width: 260px;
-    align-self: end;
+    max-width: 400px;
+    align-self: start;
+    text-align: right;
   }
 
   a,

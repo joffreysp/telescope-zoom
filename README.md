@@ -4,9 +4,9 @@ Learn how to recreate Telescope’s smooth, layered zoom scroll animation using 
 
 ![Image Title](https://codrops-1f606.kxcdn.com/codrops/wp-content/uploads/2025/10/thumb-3.png?x56200")
 
-[Article on Codrops](https://tympanus.net/codrops/2025/09/01/recreating-palmers-draggable-product-grid-with-gsap/)
+[Article on Codrops](https://tympanus.net/codrops/2025/10/29/building-a-layered-zoom-scroll-effect-with-gsap-scrollsmoother-and-scrolltrigger/)
 
-[Demo](https://tympanus.net/Tutorials/PalmerDraggableGrid/)
+[Demo](https://tympanus.net/Tutorials/TelescopeZoom/)
 
 ## Installation
 
